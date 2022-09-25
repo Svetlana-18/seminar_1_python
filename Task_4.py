@@ -8,13 +8,14 @@ num = int(input("Введите номер четверти:  "))
 def f(number):
     if (number == 1):
         return "Диапазон возможных координат x>0, y>0"
-    if (number == 2):
+    elif (number == 2):
         return "Диапазон возможных координат x<0, y>0"
-    if (number == 3):
+    elif (number == 3):
         return "Диапазон возможных координат x<0, y<0"
-    if (number == 4):
+    elif (number == 4):
         return "Диапазон возможных координат x>0, y<0"
-    return "введены некорректные данные, введите от 1 до 4"
+    else:
+        return "введены некорректные данные, введите от 1 до 4"
 
 
 print(f(num))
